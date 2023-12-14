@@ -7,6 +7,10 @@ import Button from '../Button/Button';
 import { plus } from '../../Utils/Icons';
 
 
+
+ 
+   
+
 function Form() {
     const {addIncome, getIncomes, error, setError} = useGlobalContext()
     const [inputState, setInputState] = useState({
@@ -38,9 +42,11 @@ function Form() {
 
     return (
         <FormStyled onSubmit={handleSubmit}>
+          
             {error && <p className='error'>{error}</p>}
             <div className="input-control">
-                <input 
+           <input   
+                 
                     type="text" 
                     value={title}
                     name={'title'} 
@@ -49,7 +55,7 @@ function Form() {
                 />
             </div>
             <div className="input-control">
-                <input value={amount}  
+            <input value={amount}  
                     type="text" 
                     name={'amount'} 
                     placeholder={'Salary Amount'}
@@ -84,7 +90,7 @@ function Form() {
                 <textarea name="description" value={description} placeholder='Add A Reference' id="description" cols="30" rows="4" onChange={handleInput('description')}></textarea>
             </div>
             <div className="submit-btn">
-                <Button 
+                <Button
                     name={'Add Income'}
                     icon={plus}
                     bPad={'.8rem 1.6rem'}
@@ -117,12 +123,12 @@ const FormStyled = styled.form`
         &::placeholder{
             color: rgba(34, 34, 96, 0.4);
         }
-    }
-    .input-control{
+    }  .input-control{
         input{
             width: 100%;
         }
     }
+    
 
     .selects{
         display: flex;

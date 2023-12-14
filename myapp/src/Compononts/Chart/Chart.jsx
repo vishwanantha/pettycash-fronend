@@ -10,9 +10,9 @@ import {Chart as ChartJs,
     ArcElement,
 } from 'chart.js'
 
-import {Line, PolarArea} from 'react-chartjs-2'
+import {Line } from 'react-chartjs-2'
 import styled from 'styled-components'
-import { useGlobalContext } from '../../Context/globalContext'
+import { useGlobalContext } from '../../Context/GlobalContext'
 import { dateFormat } from '../../Utils/dateFormat'
 
 ChartJs.register(

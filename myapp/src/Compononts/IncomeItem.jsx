@@ -81,7 +81,7 @@ function IncomeItem({
                         </p>
                     </div>
                     <div className="btn-con">
-                        <Button 
+                        <Button
                             icon={trash}
                             bPad={'1rem'}
                             bRad={'50%'}
@@ -111,8 +111,8 @@ const IncomeItemStyled = styled.div`
     width: 100%;
     color: #222260;
     .icon{
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
         border-radius: 20px;
         background: #F5F5F5;
         display: flex;
@@ -165,5 +165,6 @@ const IncomeItemStyled = styled.div`
         }
     }
 `;
+
 
 export default IncomeItem

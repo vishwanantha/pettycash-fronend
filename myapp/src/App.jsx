@@ -1,14 +1,11 @@
 import React, {useState, useMemo} from 'react'
 import styled from "styled-components";
-
-import { MainLayout } from './Styles/Layouts';
-
 import Navigation from './Compononts/Navigation/Navigation'
 import Dashboard from './Compononts/Dashboard/DashBoard';
 import Income from './Compononts/Income';
 import Expenses from './Compononts/Expense/Expenses';
-import { useGlobalContext } from './Context/globalContext';
-
+import { useGlobalContext } from './Context/GlobalContext';
+import { MainLayout } from './Styles/LayoutS';
 function App() {
   const [active, setActive] = useState(1)
 
@@ -46,7 +43,7 @@ function App() {
 
 const AppStyled = styled.div`
   height: 100vh;
-
+  background-image: url(${props => props.bg});
   position: relative;
   main{
     flex: 1;
@@ -58,7 +55,6 @@ const AppStyled = styled.div`
     &::-webkit-scrollbar{
       width: 0;
     }
-  }
-`;
+  }`;
 
 export default App;

@@ -1,9 +1,9 @@
 
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
-import { useGlobalContext } from '../../Context/globalContext';
+import { useGlobalContext } from '../../Context/GlobalContext';
 import History from '../../History/History';
-import { InnerLayout } from '../../Styles/Layouts';
+import { InnerLayout } from '../../Styles/LayoutS';
 import { dollar } from '../../Utils/Icons';
 import Chart from '../Chart/Chart';
 
