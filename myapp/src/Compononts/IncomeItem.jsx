@@ -99,6 +99,7 @@ function IncomeItem({
 }
 
 const IncomeItemStyled = styled.div`
+@media (min-width:600px) {
     background: #FCF6F9;
     border: 2px solid #FFFFFF;
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
@@ -164,6 +165,7 @@ const IncomeItemStyled = styled.div`
             }
         }
     }
+}
 `;
 
 

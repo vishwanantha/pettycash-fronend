@@ -71,6 +71,7 @@ function Dashboard() {
 }
 
 const DashboardStyled = styled.div`
+@media (min-width:600px) {
     .stats-con{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -142,7 +143,9 @@ const DashboardStyled = styled.div`
                 }
             }
         }
+   
     }
+}
 `;
 
 export default Dashboard

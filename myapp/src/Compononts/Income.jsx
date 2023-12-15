@@ -45,6 +45,8 @@ function Income() {
 
 
 const IncomeStyled = styled.div`
+   @media (min-Width:600px)
+   width:auto;
     display: flex;
     overflow: auto;
     .total-income{
@@ -72,6 +74,7 @@ const IncomeStyled = styled.div`
             flex: 1;
         }
     }
+}
 `;
 
 export default Income
